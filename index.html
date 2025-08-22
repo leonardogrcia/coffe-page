@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Dev Coffee - O melhor café da região. Confira nosso menu, pedidos online e localização."
+    />
+    <title>Dev Coffee</title>
+  </head>
+  <body class="font-roboto bg-black text-white">
+    <header class="border-b border-white">
+      <nav
+        class="flex items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 py-3"
+      >
+        <a href="#home" class="flex items-center">
+          <img
+            src="./src/img/2.png"
+            alt="Logo Dev Coffee"
+            class="h-10 sm:h-12 w-auto pl-6"
+          />
+        </a>
+        <div class="hidden md:flex space-x-6 text-base sm:text-lg font-medium">
+          <a
+            href="#home"
+            class="hover:text-gray-300 transition-transform duration-200 hover:scale-110"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="hover:text-gray-300 transition-transform duration-200 hover:scale-110"
+            >Sobre</a
+          >
+          <a
+            href="#menu"
+            class="hover:text-gray-300 transition-transform duration-200 hover:scale-110"
+            >Menu</a
+          >
+          <a
+            href="#review"
+            class="hover:text-gray-300 transition-transform duration-200 hover:scale-110"
+            >Avaliações</a
+          >
+          <a
+            href="#address"
+            class="hover:text-gray-300 transition-transform duration-200 hover:scale-110"
+            >Endereço</a
+          >
+        </div>
+        <div class="flex items-center space-x-3 sm:space-x-4">
+          <img
+            src="https://img.icons8.com/ios-filled/24/search--v2.png"
+            alt="search"
+            class="w-5 h-5 sm:w-6 sm:h-6 invert transition-transform duration-200 hover:scale-110"
+          />
+          <img
+            src="https://img.icons8.com/sf-black-filled/24/shopping-cart.png"
+            id="cart-icon"
+            alt="cart"
+            class="w-5 h-5 sm:w-6 sm:h-6 invert transition-transform duration-200 hover:scale-110"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <section
+      id="home"
+      class="bg-cover bg-center bg-no-repeat h-screen flex items-center"
+      style="background-image: url('./src/img/bg-cafe.jpg')"
+    >
+      <div class="px-4 sm:px-8 md:px-16 lg:px-24 max-w-7xl mx-auto w-full flex">
+        <div class="max-w-lg text-left">
+          <h3
+            class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 uppercase leading-tight"
+          >
+            O melhor café da região!
+          </h3>
+          <p
+            class="mb-3 leading-relaxed text-gray-200 text-sm sm:text-base md:text-lg"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            temporibus enim sapiente laudantium dolore, quasi iste officiis
+            voluptatum saepe dolor.
+          </p>
+          <a href="#"
+            ><button
+              class="bg-amber-950 text-white px-4 sm:px-6 py-2 rounded hover:bg-yellow-800 transition-colors text-sm sm:text-base"
+              type="button"
+            >
+              Faça seu pedido
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-black py-12">
+      <div class="px-4 sm:px-8 md:px-16 lg:px-24 max-w-7xl mx-auto">
+        <h2 class="font-bold text-3xl mb-8 uppercase text-center sm:text-left">
+          Sobre <span class="text-amber-500">nós</span>
+        </h2>
+        <div class="flex flex-col md:flex-row items-stretch gap-8">
+          <div class="md:w-1/2">
+            <img
+              src="./src/img/about-img.jpg"
+              alt="Sobre nosso café"
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+          <div
+            class="md:w-1/2 flex flex-col justify-center gap-4 bg-zinc-900 p-6 rounded-lg"
+          >
+            <h3 class="text-2xl font-semibold uppercase">
+              O que faz nosso <span class="text-amber-500">café</span> especial
+            </h3>
+            <p class="text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              exercitationem reiciendis consequatur odit laborum error cum
+              accusantium similique ut totam? Officiis hic eos temporibus
+              dolores odit.
+            </p>
+            <p class="text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              exercitationem reiciendis consequatur odit laborum error cum
+              accusantium similique ut totam? Officiis hic eos temporibus
+              dolores odit.
+            </p>
+            <a href="#"
+              ><button
+                class="bg-yellow-950 text-white px-4 sm:px-6 py-2 rounded hover:bg-yellow-800 transition-colors text-sm sm:text-base"
+                type="button"
+              >
+                Saiba Mais
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="py-12 bg-black">
+      <div class="px-4 sm:px-8 md:px-16 lg:px-24 max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold uppercase mb-8 text-center">
+          Nosso <span class="text-amber-500">Menu</span>
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-zinc-900 p-6 rounded-lg flex flex-col items-center">
+            <img
+              src="src/img/menu-1.png"
+              alt="Expresso"
+              class="w-32 h-32 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Expresso</h3>
+            <div class="text-amber-500 font-bold mb-4">R$ 12,50</div>
+            <button
+              class="add-cart bg-yellow-950 text-white px-4 py-2 rounded hover:bg-yellow-800 transition-colors text-sm sm:text-base"
+            >
+              Adicione ao carrinho
+            </button>
+          </div>
+          <div class="bg-zinc-900 p-6 rounded-lg flex flex-col items-center">
+            <img
+              src="src/img/menu-2.png"
+              alt="Cappuccino"
+              class="w-32 h-32 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Cappuccino</h3>
+            <div class="text-amber-500 font-bold mb-4">R$ 16,00</div>
+            <button
+              class="add-cart bg-yellow-950 text-white px-4 py-2 rounded hover:bg-yellow-800 transition-colors text-sm sm:text-base"
+            >
+              Adicione ao carrinho
+            </button>
+          </div>
+          <div class="bg-zinc-900 p-6 rounded-lg flex flex-col items-center">
+            <img
+              src="src/img/menu-3.png"
+              alt="Latte"
+              class="w-32 h-32 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Latte</h3>
+            <div class="text-amber-500 font-bold mb-4">R$ 15,50</div>
+            <button
+              class="add-cart bg-yellow-950 text-white px-4 py-2 rounded hover:bg-yellow-800 transition-colors text-sm sm:text-base"
+            >
+              Adicione ao carrinho
+            </button>
+          </div>
+          <div class="bg-zinc-900 p-6 rounded-lg flex flex-col items-center">
+            <img
+              src="src/img/menu-4.png"
+              alt="Mocha"
+              class="w-32 h-32 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Mocha</h3>
+            <div class="text-amber-500 font-bold mb-4">R$ 17,00</div>
+            <button
+              class="add-cart bg-yellow-950 text-white px-4 py-2 rounded hover:bg-yellow-800 transition-colors text-sm sm:text-base"
+            >
+              Adicione ao carrinho
+            </button>
+          </div>
+          <div class="bg-zinc-900 p-6 rounded-lg flex flex-col items-center">
+            <img
+              src="src/img/menu-5.png"
+              alt="Macchiato"
+              class="w-32 h-32 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Macchiato</h3>
+            <div class="text-amber-500 font-bold mb-4">R$ 14,50</div>
+            <button
+              class="add-cart bg-yellow-950 text-white px-4 py-2 rounded hover:bg-yellow-800 transition-colors text-sm sm:text-base"
+            >
+              Adicione ao carrinho
+            </button>
+          </div>
+          <div class="bg-zinc-900 p-6 rounded-lg flex flex-col items-center">
+            <img
+              src="src/img/menu-6.png"
+              alt="Americano"
+              class="w-32 h-32 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Americano</h3>
+            <div class="text-amber-500 font-bold mb-4">R$ 13,00</div>
+            <button
+              class="add-cart bg-yellow-950 text-white px-4 py-2 rounded hover:bg-yellow-800 transition-colors text-sm sm:text-base"
+            >
+              Adicione ao carrinho
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="review" class="py-12 bg-black">
+      <div class="px-4 sm:px-8 md:px-16 lg:px-24 max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold uppercase mb-8 text-center">
+          Nossos <span class="text-amber-500">Clientes</span>
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-zinc-900 p-6 rounded-lg flex flex-col items-center text-center"
+          >
+            <img
+              src="./src/img/quote-img.png"
+              alt="quote"
+              class="w-10 h-10 mb-3"
+            />
+            <p class="text-gray-200 mb-4 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+              incidunt qui earum vero.
+            </p>
+            <img
+              src="./src/img/pic-1.png"
+              alt="João da Silva"
+              class="w-24 h-24 rounded-full mb-2"
+            />
+            <h3 class="text-xl font-semibold mb-2">João da Silva</h3>
+            <div class="flex space-x-1">
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                class="w-5 h-5"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-zinc-900 p-6 rounded-lg flex flex-col items-center text-center"
+          >
+            <img
+              src="./src/img/quote-img.png"
+              alt="quote"
+              class="w-10 h-10 mb-3"
+            />
+            <p class="text-gray-200 mb-4 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+              incidunt qui earum vero.
+            </p>
+            <img
+              src="./src/img/pic-2.png"
+              alt="Ana Lima"
+              class="w-24 h-24 rounded-full mb-2"
+            />
+            <h3 class="text-xl font-semibold mb-2">Ana Lima</h3>
+            <div class="flex space-x-1">
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-zinc-900 p-6 rounded-lg flex flex-col items-center text-center"
+          >
+            <img
+              src="./src/img/quote-img.png"
+              alt="quote"
+              class="w-10 h-10 mb-3"
+            />
+            <p class="text-gray-200 mb-4 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+              incidunt qui earum vero.
+            </p>
+            <img
+              src="./src/img/pic-3.png"
+              alt="Luiz Ferreira"
+              class="w-24 h-24 rounded-full mb-2"
+            />
+            <h3 class="text-xl font-semibold mb-2">Luiz Ferreira</h3>
+            <div class="flex space-x-1">
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                class="w-5 h-5"
+              />
+              <img
+                src="https://img.icons8.com/ios/30/ffffff/star--v2.png"
+                class="w-5 h-5"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="address" class="py-12 bg-black">
+      <div class="px-4 sm:px-8 md:px-16 lg:px-24 max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold uppercase mb-8 text-center">
+          Nosso <span class="text-amber-500">Endereço</span>
+        </h1>
+        <div class="flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14419.103024981718!2d-51.4834774043122!3d-25.37883091820207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef37372086b293%3A0xee03bc00dc3dc7c9!2sCookie%20do%20Boleta%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1755793903607!5m2!1spt-BR!2sbr"
+            class="w-full sm:w-3/4 md:w-1/2 aspect-square rounded-lg border-0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-8 bg-black">
+      <div
+        class="px-4 sm:px-8 md:px-16 lg:px-24 max-w-7xl mx-auto flex justify-center gap-4"
+      >
+        <a href="#" class="hover:scale-110 transition-transform"
+          ><img
+            src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"
+            alt="Instagram"
+            class="w-6 h-6"
+        /></a>
+        <a href="#" class="hover:scale-110 transition-transform"
+          ><img
+            src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png"
+            alt="Facebook"
+            class="w-6 h-6"
+        /></a>
+        <a href="#" class="hover:scale-110 transition-transform"
+          ><img
+            src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v1.png"
+            alt="Twitter"
+            class="w-6 h-6"
+        /></a>
+      </div>
+    </footer>
+
+    <div
+      id="cart"
+      class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+    >
+      <div
+        class="bg-zinc-900 p-6 rounded-lg w-11/12 sm:w-96 max-h-[80vh] overflow-y-auto flex flex-col gap-4"
+      >
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-bold">Carrinho</h2>
+          <button id="close-cart" class="text-white text-xl">X</button>
+        </div>
+        <div id="cart-items" class="flex flex-col gap-2"></div>
+        <div class="mt-4 flex justify-between items-center font-bold text-lg">
+          <span>Total:</span>
+          <span id="cart-total">R$ 0,00</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const cart = document.getElementById("cart");
+      const cartItems = document.getElementById("cart-items");
+      const cartTotal = document.getElementById("cart-total");
+      const addCartButtons = document.querySelectorAll(".add-cart");
+      const closeCart = document.getElementById("close-cart");
+      const cartIcon = document.getElementById("cart-icon");
+
+      let cartData = [];
+
+      function formatPrice(priceStr) {
+        return parseFloat(priceStr.replace("R$ ", "").replace(",", "."));
+      }
+
+      function updateCartDisplay() {
+        cartItems.innerHTML = "";
+        let total = 0;
+        cartData.forEach((item, index) => {
+          total += item.price * item.quantity;
+          const div = document.createElement("div");
+          div.classList.add(
+            "flex",
+            "justify-between",
+            "items-center",
+            "bg-zinc-800",
+            "p-2",
+            "rounded"
+          );
+          div.innerHTML = `
+      <span>${item.title} - R$ ${item.price.toFixed(2).replace(".", ",")} x ${
+            item.quantity
+          }</span>
+      <div>
+        <button class="decrease bg-gray-600 px-2 py-1 rounded text-sm">-</button>
+        <button class="increase bg-green-600 px-2 py-1 rounded text-sm">+</button>
+        <button class="remove bg-red-600 px-2 py-1 rounded text-sm">X</button>
+      </div>
+    `;
+          cartItems.appendChild(div);
+
+          div.querySelector(".remove").addEventListener("click", () => {
+            cartData.splice(index, 1);
+            updateCartDisplay();
+          });
+
+          div.querySelector(".increase").addEventListener("click", () => {
+            item.quantity++;
+            updateCartDisplay();
+          });
+
+          div.querySelector(".decrease").addEventListener("click", () => {
+            if (item.quantity > 1) {
+              item.quantity--;
+            } else {
+              cartData.splice(index, 1);
+            }
+            updateCartDisplay();
+          });
+        });
+        cartTotal.innerText = `R$ ${total.toFixed(2).replace(".", ",")}`;
+      }
+
+      addCartButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const card = btn.closest("div.bg-zinc-900");
+          const title = card.querySelector("h3").innerText;
+          const price = formatPrice(
+            card.querySelector("div.text-amber-500").innerText
+          );
+
+          const existingItem = cartData.find((item) => item.title === title);
+          if (existingItem) {
+            existingItem.quantity++;
+          } else {
+            cartData.push({ title, price, quantity: 1 });
+          }
+
+          updateCartDisplay();
+          cart.classList.remove("hidden");
+        });
+      });
+
+      closeCart.addEventListener("click", () => cart.classList.add("hidden"));
+      cartIcon.addEventListener("click", () => cart.classList.toggle("hidden"));
+    </script>
+  </body>
+</html>
